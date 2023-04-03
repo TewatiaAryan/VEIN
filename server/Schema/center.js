@@ -17,5 +17,6 @@ const centerSchema=new mongoose.Schema({
     }]
 })
 
-const center=mongoose.model("BloodCenter",centerSchema);
-module.exports=center;
+const Center=mongoose.model("BloodCenter",centerSchema);  //BloodCenter is collection name
+
+module.exports=Center;
