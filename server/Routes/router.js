@@ -29,7 +29,7 @@ routes.post("/centerregister", async (req, res) => {
     }
 })
 
-routes.post("/centerlogin",async(req,res)=>{
+routes.post("/Login",async(req,res)=>{
     const { centerName, password } = req.body;
     try {
         if (!centerName || !password) {
