@@ -38,8 +38,15 @@ routes.post("/Login",async(req,res)=>{
         else{
             const CenterNa = await Center.findOne({ centerName: centerName })
             if(CenterNa){
-                const comparePass =await bcrypt.compare(password,CenterNa.password)
-                console.log(comparePass);            }
+                const comparePass = await bcrypt.compare(password,CenterNa.password)
+                // console.log(comparePass);  
+                if(comparePass){
+                    res.status(200).json("Successfull");
+                }
+                else{
+                    return res.status(400).json("Wrong Password")
+                }
+            }
             else{
                 return res.status(400).json("User Not Present")
             }
