@@ -91,4 +91,9 @@ routes.post("/addblood", CenterAuth, async (req, res) => {
         console.log(error);
     }
 })
+
+routes.get("/logout",(req,res)=>{
+    res.clearCookie("jwtoken",{path:"/"})
+    res.status(200).json("Logout Successfull");
+})
 module.exports = routes;
