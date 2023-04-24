@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-// import Nav from './Nav';
+import { NavLink, useNavigate } from 'react-router-dom';
 import gif from './giphy.gif';
 export default function Login() {
     const navigate = useNavigate()
@@ -51,30 +50,27 @@ export default function Login() {
                                 <div className="section-login-1-img">
                                     <img src={gif} alt="" />
                                 </div>
-
                             </div>
                         </div>
                         <div className="section-login-2">
                             <div className="section-login-2-main">
-
                                 <h1 className="section-login-2-title">Login</h1>
                                 <form className="section-login-2-form">
                                     <div class="login-form-2">
                                         <label for="input-name">UserName</label>
-                                        <input type="text" id="input-name" required />
+                                        <input type="text" id="input-name" required name="centerName" onChange={handleData} />
                                     </div>
                                     <div className="login-form-3">
                                         <label for="input-password">Password</label>
-                                        <input type="password" id="input-password" required />
+                                        <input type="password" id="input-password" required name='password' onChange={handleData} />
                                     </div>
                                     <div className="login-form-submit-btn">
-                                        <button>Login</button>
+                                        <button onClick={postData}>Login</button>
                                     </div>
                                     <div className="login-form-5">
-                                        <p>Create Account <a href="#">Sign Up</a></p>
+                                        <p>Create Account <NavLink to='/centerRegister' >Sign Up</NavLink></p>
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                     </div>

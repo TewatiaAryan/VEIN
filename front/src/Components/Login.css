@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -9,25 +8,23 @@ body {
     width: 100%;
     height: auto;
 }
-
 main section.section-login {
     width: 100%;
     height: 100vh;
-    /* background: url(https://rvs-gradie-signup-page.vercel.app/Assets/Background.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f2ebe2;
+    background-image: linear-gradient(to right top, #f2ebe2, #e5cab4, #dba78d, #d1826f, #c55b5b);
+
 }
 main section.section-login .section-main {
     width: 60%;
     height: auto;
     display: flex;
-    border: 2px ridge rgb(241, 197, 197);
-    box-shadow: 4px 4px 200px rgb(173, 42, 42);
+    box-shadow: 5px 5px 15px rgb(173, 42, 42);
 }
 
 main section.section-login .section-main .section-login-1, main section.section-login .section-login-2 {
@@ -35,7 +32,7 @@ main section.section-login .section-main .section-login-1, main section.section-
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(248, 229, 229);
+    background: rgb(246, 188, 188);
 }
 main section.section-login .section-main .section-login-1 .section-login-1-main {
     width: 100%;
@@ -56,7 +53,6 @@ font-size: 23px;
 font-family: 'nunito';
 }
 main section.section-login .section-main .section-login-1 .section-login-1-main .section-login-1-img {
-
 width: 100%;
 }
 main section.section-login .section-main .section-login-1 .section-login-1-main .section-login-1-img img {
@@ -129,10 +125,6 @@ main section.section-login .section-main .section-login-2 .section-login-2-main 
     text-align: center;
 }
 
-
-
-
-
 @media only screen and (max-width: 1200px) {
 
     /* login page */
@@ -183,4 +175,9 @@ main section.section-login .section-main .section-login-2 .section-login-2-main 
     main section.section-login .section-main .section-login-2 .section-login-2-main {
         padding: 35px 25px;
     }
+}
+.hlo{
+    align-items: center;
+    position: relative;
+    top: -17%;
 }

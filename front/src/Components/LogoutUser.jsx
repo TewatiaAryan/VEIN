@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 export default function LogoutUser() {
     const navigate = useNavigate();
     const userlogout = async () => {
-        const res = await fetch("/logoutuser", {
+        const res = await fetch("/logout", {
             method: "GET",
             headers: {
                 Accept: "application/json",

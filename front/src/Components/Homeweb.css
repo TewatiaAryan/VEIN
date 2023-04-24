@@ -1,0 +1,278 @@
+#start {
+    padding: 0% 0%;
+}
+
+.container-fluid {
+    padding: 0% 8%;
+    background-color: white;
+}
+
+.navbar-link {
+    margin: 0% 5%;
+}
+
+.navbar-link {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    margin: 0px 8px;
+}
+
+.slide-pic {
+    width: 100%;
+}
+
+.info-box-1 {
+    background-color: #107ecb;
+}
+
+.info-box-2 {
+    background-color: #4738c0;
+}
+
+.learn {
+    padding: 0% 33%;
+    color: red;
+}
+
+blockquote {
+    font-family: oswald;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.typeHeading {
+    color: red;
+    font-family: 'Montserrat-light';
+    font-size: 1rem;
+}
+
+.donationTypeInfoWindow {
+    background-color: #fef8f8;
+}
+
+.main-footer {
+    background-color: rgb(47, 41, 41);
+    color: white;
+    padding-bottom: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-lower {
+    padding: 3% 1%;
+}
+
+.last-fluid {
+    padding: 2% 5%;
+    margin-top: 1px;
+}
+
+.footer-logo {
+    margin: 0px 1px;
+}
+
+.mohf {
+    width: 93%;
+}
+
+.auto-container {
+    margin: auto;
+}
+
+.clearfix {
+    margin-bottom: 1px;
+}
+
+.logos {
+    margin-bottom: 0px;
+}
+
+.ajeeb-pic {
+    width: 100%;
+}
+
+.sitemap {
+    padding: 0% 8%;
+}
+
+#wholeBlood {
+    padding: 0% 3%;
+}
+
+.donors {
+    padding-right: 0%;
+}
+
+.caro-ka-a {
+    color: red;
+}
+
+.logos-box {
+    padding-right: 2%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#donation-pic {
+    width: 100%;
+}
+
+#hiii {
+    color: red;
+}
+
+#counter {
+    text-align: center !important;
+    padding: 5px;
+    color: #fff;
+    background: rgb(1, 65, 127);
+    background: radial-gradient(circle, rgba(1, 65, 127, 1) 0%, rgba(1, 48, 103, 1) 16%, rgba(0, 17, 60, 1) 57%, rgba(0, 17, 60, 1) 100%);
+    /* background: linear-gradient(45deg, #ffffffee 30%, #fd000055 150%),
+    linear-gradient(145deg, #ffffffee 30%, #fd000055 150%); */
+    background: url('counter-bg.png');
+    background-size: cover;
+}
+
+#counter .counter-title {
+    display: block;
+    text-align: center;
+    font-size: 25px !important;
+    font-family: oswald, Montserrat, sans-serif !important;
+}
+.row{
+    margin: 4px;
+    margin-top: 50px;
+    padding: 4px;
+}
+.hlo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#counter .counter-title h2 {
+    font-size: 36px;
+    font-family: inherit !important;
+    justify-content: center;
+    /* font-weight: 800;
+    color: #fff; */
+}
+
+#counter .counter-title .counter-date {
+    justify-content: center;
+}
+
+#counter .counter-title h3 {
+    font-family: inherit !important;
+    color: #9A1819;
+    text-transform: none !important;
+    justify-content: center;
+}
+
+#counter .counter-row {
+    display: flex;
+    justify-content: center;
+    /* width: 75%; */
+    width:55%;
+    margin: auto;
+}
+
+#counter .counter-container {
+    width: 20vw;
+    height: 130px;
+    background-color: #107ecb;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 1px #00000099 solid;
+}
+
+#counter .count-box {
+    font-size: 30px;
+    font-weight: 600;
+    /*            animation: strobe 2s linear infinite;*/
+    color: #fff;
+    padding-top: 30px;
+    font-family: oswald, Montserrat, sans-serif !important;
+}
+
+#counter .counter-container h3 {
+    font-size: 25px;
+    color: #fff;
+    font-family: oswald, Montserrat, sans-serif !important;
+}
+
+#counter .counter-container h3 sup {
+    cursor: pointer;
+}
+
+#counter #statsRow {
+    color: #9A1819;
+    justify-content: center;
+}
+
+@media (max-width: 1600px) {
+    #counter .count-box {
+        font-size: 26px;
+    }
+
+    #counter .counter-container h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #counter .count-box {
+        font-size: 18px;
+    }
+
+    #counter .counter-container h3 {
+        font-size: 16px;
+    }
+
+    .hlo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    #counter {
+        background-size: cover;
+    }
+
+    .hlo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #counter .counter-row {
+        flex-direction: column;
+    }
+
+    #counter .counter-container {
+        width: 60vw;
+    }
+
+    #counter .count-box {
+        font-size: 24px;
+    }
+
+    #counter .counter-container h3 {
+        font-size: 20px;
+    }
+}
+
+.back {
+    background-color: #e9e0e1c7;
+}

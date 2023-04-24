@@ -4,7 +4,7 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 
-dotenv.config();
+dotenv.config({ path: "./.env" })
 
 app.use(cookieParser());
 app.use(express.json());

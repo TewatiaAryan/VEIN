@@ -8,19 +8,21 @@ import './Components/NavStyle.css';
 import './Components/Login.css';
 import Home from './Components/Home.jsx';
 import Nav from './Components/Nav.jsx';
+import LogoutUser from './Components/LogoutUser.jsx';
+import CenterData from './Components/CenterData.jsx';
 function App() {
   return (
     <>
-    {/* hlo */}
       <BrowserRouter>
-      <Nav/>
+        <Nav />
         <Routes>
-          
-          <Route path="/" element={<Login />} />
-          <Route path="/centerRegister" element={<CenterRegister />} />
-          <Route path="/CenterHome" element={<CenterHome />} />
-          <Route path="/logout" element={<Logout/>}/>
-          <Route path="/Home" element={<Home/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/centerregister" element={<CenterRegister />} />
+          <Route path="/centerHome" element={<CenterHome />} />
+          {/* <Route path="/addBlood" element={<AddBloodCenter />} /> */}
+          <Route path="/logout" element={<LogoutUser />} />
+          <Route path='/centerdata' element={<CenterData/>}/>
         </Routes>
       </BrowserRouter>
     </>

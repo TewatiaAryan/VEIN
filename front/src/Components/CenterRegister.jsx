@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Nav from './Nav';
+import gif from './giphy.gif';
+import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 function CenterRegister() {
     const navigate = useNavigate()
@@ -41,15 +42,50 @@ function CenterRegister() {
     }
     return (
         <>
-        <Nav/>
-        <h1>Center Register</h1>
-            <form>
-                <input type="text" placeholder='Center Name' name='centerName' onChange={handleData} />
-                <input type="text" placeholder='Address' name='address' onChange={handleData} />
-                <input type="number" placeholder='Number' name='number' onChange={handleData} />
-                <input type="text" placeholder='password' name='password' onChange={handleData} />
-                <button onClick={postData}>Submit</button>
-            </form>
+            <main>
+                <section className="section-login">
+                    <div className="section-main">
+                        <div className="section-login-1">
+                            <div className="section-login-1-main">
+                                <div className='hlo'><h1 className="section-login-1-title">Vein</h1><br/>
+                                    <p className="section-login-1-text">Be a life  saver of someone.</p></div>
+                                <div className="section-login-1-img">
+                                    <img src={gif} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="section-login-2">
+                            <div className="section-login-2-main">
+                                <h1 className="section-login-2-title">Sign Up</h1>
+                                <form className="section-login-2-form">
+                                    <div class="login-form-2">
+                                        <label for="input-name">Center Name</label>
+                                        <input type="text" id="input-name" required placeholder='Center Name' name='centerName' onChange={handleData} />
+                                    </div>
+                                    <div className="login-form-2">
+                                        <label for="input-password">Address</label>
+                                        <input type="password" id="input-password" required placeholder='Address' name='address' onChange={handleData} />
+                                    </div>
+                                    <div className="login-form-2">
+                                        <label for="input-password">Mobile </label>
+                                        <input type="password" id="input-password" required placeholder='Number' name='number' onChange={handleData} />
+                                    </div>
+                                    <div className="login-form-3">
+                                        <label for="input-password">Password</label>
+                                        <input type="password" id="input-password" required placeholder='password' name='password' onChange={handleData} />
+                                    </div>
+                                    <div className="login-form-submit-btn">
+                                        <button onClick={postData}>Sign Up</button>
+                                    </div>
+                                    <div className="login-form-5">
+                                        <p>Already Have An Account <NavLink to='/Login' >Sign In</NavLink></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </>
     )
 }

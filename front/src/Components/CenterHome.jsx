@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import rakt from './blood.png'
+import './CenterHome.css'
 export default function CenterHome() {
   const navigate = useNavigate()
   const [centerData, setCenterData] = useState("")
@@ -13,9 +15,7 @@ export default function CenterHome() {
       })
       const data = await res.json()
       console.log(data);
-
       setCenterData(data)
-
     } catch (error) {
       navigate("/")
       console.log(error);
@@ -25,7 +25,6 @@ export default function CenterHome() {
   const [blood, setBlood] = useState({
     a_Plus: "", a_Minus: "", b_Plus: "", b_Minus: "", ab_Plus: "", ab_Minus: "", o_Plus: "", o_Minus: ""
   })
-
 
   const handleBlood = (e) => {
     const name = e.target.name;
@@ -53,27 +52,84 @@ export default function CenterHome() {
     }
   }
   useEffect(() => {
-    getCenterData();
     // eslint-disable-next-line
+    getCenterData();
   }, [])
-
 
   return (
     <>
-      <h1>CenterHome</h1>
-      <h1>{centerData.centerName}</h1>
-
-      <form method="post">
-        <input type="number" placeholder='A+' name='a_Plus' onChange={handleBlood} />
-        <input type="number" placeholder='A-' name='a_Minus' onChange={handleBlood} />
-        <input type="number" placeholder='B+' name='b_Plus' onChange={handleBlood} />
-        <input type="number" placeholder='B-' name='b_Minus' onChange={handleBlood} />
-        <input type="number" placeholder='AB+' name='ab_Plus' onChange={handleBlood} />
-        <input type="number" placeholder='AB-' name='ab_Minus' onChange={handleBlood} />
-        <input type="number" placeholder='O+' name='o_Plus' onChange={handleBlood} />
-        <input type="number" placeholder='O-' name='o_Minus' onChange={handleBlood} />
-      </form>
-      <button onClick={PostBlood}>Add Data</button>
+      <div className="container1">
+        <div className='info'>
+          <table className='tab'>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <tr>
+                      <td>
+                        <label for="input-A+">A+ </label>
+                        <input type="number" id="input-A+" placeholder='A+' className='input' name='a_Plus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-B+">B+ </label>
+                        <input type="number" id="input-B+" placeholder='B+' className='input' name='b_Plus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-O+">O+ </label>
+                        <input type="number" id="input-O+" className='input' placeholder='O+' name='o_Plus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-AB+">AB+ </label>
+                        <input type="number" id="input-AB+" placeholder='AB+' className='input' name='ab_Plus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <tr>
+                      <td>
+                        <label for="input-A-">A- </label>
+                        <input type="number" id="input-A-" className='input' placeholder='A-' name='a_Minus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-B-">B- </label>
+                        <input type="number" id="input-B-" className='input' placeholder='B-' name='b_Minus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-O-">O- </label>
+                        <input type="number" id="input-O-" className='input' placeholder='O-' name='o_Minus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="input-AB-">AB- </label>
+                        <input type="number" id="input-AB-" className='input' placeholder='AB-' name='ab_Minus' onChange={handleBlood} />
+                      </td>
+                    </tr>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <button onClick={PostBlood} style={{border:"2px solid red",cursor:"pointer"}}>Add Data</button>
+        </div>
+        {/* <div className="photo">
+          <img src={rakt} alt="" />
+        </div> */}
+      </div>
     </>
   )
 }
