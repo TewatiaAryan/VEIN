@@ -10,6 +10,7 @@ import Home from './Components/Home.jsx';
 import Nav from './Components/Nav.jsx';
 import LogoutUser from './Components/LogoutUser.jsx';
 import CenterData from './Components/CenterData.jsx';
+import Search from './Components/Search.jsx';
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
           {/* <Route path="/addBlood" element={<AddBloodCenter />} /> */}
           <Route path="/logout" element={<LogoutUser />} />
           <Route path='/centerdata' element={<CenterData/>}/>
+          <Route path='/search' element={<Search/>}/>
         </Routes>
       </BrowserRouter>
     </>

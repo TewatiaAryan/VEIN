@@ -10,9 +10,9 @@ export default function Nav() {
                     <ul>
                         <li><NavLink to="/" >Home</NavLink></li>
                         <li><NavLink to="/centerRegister" >CenterRegister</NavLink></li>
-                        <li><NavLink to="/Contact">Contact</NavLink></li>
+                        {/* <li><NavLink to="/Contact">Contact</NavLink></li> */}
                         <li><NavLink to="/Login">Login</NavLink></li>
-                        <li><NavLink to="/centerdata">Center Data</NavLink></li>
+                        {/* <li><NavLink to="/centerdata">Center Data</NavLink></li> */}
                     </ul>
                 </div>
             </nav>

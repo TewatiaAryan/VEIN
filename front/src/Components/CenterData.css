@@ -21,18 +21,30 @@
 .container1 {
     overflow: hidden;
     height: 89vh;
-    background-image: linear-gradient(to right top, #f2ebe2, #e5cab4, #dba78d, #d1826f, #c55b5b);
+     background-image: linear-gradient(to right top, #f2ebe2, #e5cab4, #dba78d, #d1826f, #c55b5b);
 }
 
 .input {
     margin: 10px;
-    padding: 17px;
+    padding: 10px;
     margin-left: 2px;
     background: #E8F0FE;
     border: 1px solid #e9e6e6;
     border-radius: 4px;
+    width: 120px;
+    height: 55px;
 }
-
+.info h1{
+    position: relative;
+    left: 26%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tab td{
+    width: 70%;
+}
+.tab label{
+    font-size: 40px;
+}
 button {
     background: #5a1fe0;
     padding: 14px;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import rakt from './blood.png'
 import './CenterHome.css'
 export default function CenterHome() {
@@ -46,6 +47,7 @@ export default function CenterHome() {
     await res.json();
     if (res.status === 200) {
       alert("Add Success")
+      navigate("/centerdata")
     }
     else if (res.status === 401) {
       alert("Data Empty")
@@ -124,11 +126,13 @@ export default function CenterHome() {
               </td>
             </tr>
           </table>
-          <button onClick={PostBlood} style={{border:"2px solid red",cursor:"pointer"}}>Add Data</button>
+          {/* <NavLink to="/centerdata">Center Data</NavLink> */}
+          {/* <button onClick={PostBlood}><NavLink to='/centerdata'>Add Data</NavLink></button> */}
+          <button onClick={PostBlood}>Add Data</button>
         </div>
-        {/* <div className="photo">
+        <div className="photo">
           <img src={rakt} alt="" />
-        </div> */}
+        </div>
       </div>
     </>
   )

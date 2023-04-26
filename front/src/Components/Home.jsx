@@ -7,9 +7,11 @@ import four from './logo-nrhm.png';
 import five from './ONE_NATION_2500_600.webp';
 import six from './updated_NewYear2022.webp';
 import seven from './donationFact.jpg';
+import { useNavigate } from 'react-router-dom';
 export default function Home() {
+  const navigate  = useNavigate()
   return (
-    <>
+    <><div className='seth'>
       <section>
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
@@ -77,9 +79,9 @@ export default function Home() {
                     turn, helps in maintaining good health.
                   </p>
                 </blockquote>
-                <button onClick="window.location='/BLDAHIMS/bloodbank/nearbyBBRed.cnt'"
+                <button onClick={()=>navigate("/search")}
                   className="btn btn-danger svcNearBy hvr-sweep-to-right">
-                  <i className="fa fa-tint"></i>&nbsp; Donate Now
+                  <i className="fa fa-tint"></i>&nbsp; Search Blood
                 </button>
                 <br /><br />
               </div>
@@ -380,6 +382,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </div>
     </>
   )
 }

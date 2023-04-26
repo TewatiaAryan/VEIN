@@ -1,7 +1,6 @@
 #start {
     padding: 0% 0%;
 }
-
 .container-fluid {
     padding: 0% 8%;
     background-color: white;
@@ -225,7 +224,6 @@ a {
     #counter .count-box {
         font-size: 26px;
     }
-
     #counter .counter-container h3 {
         font-size: 22px;
     }
@@ -235,7 +233,6 @@ a {
     #counter .count-box {
         font-size: 18px;
     }
-
     #counter .counter-container h3 {
         font-size: 16px;
     }

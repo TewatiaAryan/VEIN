@@ -1,0 +1,8 @@
+.container2{
+    /* border: 2px solid red; */
+    height: 100vh;
+    background-image: linear-gradient(to right top, #f2ebe2, #e5cab4, #dba78d, #d1826f, #c55b5b);
+}
+.table{
+    border: 2px solid black;
+}

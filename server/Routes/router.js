@@ -16,11 +16,11 @@ routes.get("/centerhome", CenterAuth, async (req, res) => {
 })
 
 
-// routes.get("/openData",async(req,res)=>{
-//     const data = await OpenData.find();
-//     res.send(data)
-//     console.log(data);
-// })
+routes.get("/openData",async(req,res)=>{
+    const data = await OpenData.find();
+    console.log(data);
+    res.send(data)
+})
 
 
 routes.post("/centerregister", async (req, res) => {
