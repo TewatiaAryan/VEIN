@@ -18,6 +18,7 @@ routes.get("/centerhome", CenterAuth, async (req, res) => {
 
 routes.get("/openData",async(req,res)=>{
     const data = await OpenData.find();
+    // hlo
     console.log(data);
     res.send(data)
 })
